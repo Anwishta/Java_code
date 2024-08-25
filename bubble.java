@@ -22,7 +22,7 @@ public class bubble {
                 }
             }
             
-        }
+        }sc.close();
         printArray(arr);
     }
 }

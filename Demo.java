@@ -17,9 +17,6 @@ public class Demo {
         double circleArea = shape.get_area(5.3);
         System.out.println("The area of the circle is: " + circleArea);
 
-//        double rightTriangleArea = shape.get_area(5, 9);
-//        System.out.println("The area of the right triangle is: " + rightTriangleArea);
-
         double triangleArea = shape.get_area(5, 9, 12);
         System.out.println("The area of the triangle is: " + triangleArea);
     }
