@@ -11,12 +11,13 @@ public class PrintSum2 {
             }
             sum += i;
             printSum(i+1, n, sum);
+            System.out.println(i);
         }
         public static void main(String[] args) {
         System.out.println("Enter the number: ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        printSum(0, n, 0);
+        printSum(1, n, 0);
         sc.close();
     }
 }
