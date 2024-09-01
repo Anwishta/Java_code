@@ -19,5 +19,5 @@ public class Demo {
 
         double triangleArea = shape.get_area(5, 9, 12);
         System.out.println("The area of the triangle is: " + triangleArea);
-    }
+}
 }
