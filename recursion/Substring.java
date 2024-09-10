@@ -12,6 +12,6 @@ public class Substring {
         sub(s, idx+1, newString);
     }
     public static void main(String[] args) {
-        sub("String", 0, "");
+        sub("abcd", 0, "");
     }
 }
