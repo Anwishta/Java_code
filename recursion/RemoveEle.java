@@ -10,8 +10,8 @@ public class RemoveEle {
     }
     public static String remove(String s, char c,int i, int count, String newString){
         if (i==s.length()-1) {
-            String ns = counts(newString, count, c);
-            return ns;
+           return counts(newString, count, c);
+           
         }
         if(s.charAt(i)==c){
             return remove(s, c, i+1, count+1, newString);
