@@ -6,12 +6,13 @@ public class Substring {
             System.out.println(newString);
             return;
         }
+        char curr = s.charAt(idx);
         //choose
-        sub(s, idx+1, newString+s.charAt(idx));
+        sub(s, idx+1, newString+curr);
         //don't choose
         sub(s, idx+1, newString);
     }
     public static void main(String[] args) {
-        sub("abcd", 0, "");
+        sub("abc", 0, "");
     }
 }
