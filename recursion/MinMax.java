@@ -1,4 +1,4 @@
-
+package recursion;
 import java.util.Scanner;
 public class MinMax {
     public static int[] array(int []arr){
@@ -27,6 +27,6 @@ public class MinMax {
         for(int i=0; i<minmax.length; i++){
             System.out.println(minmax[i]);
         }
-
+        sc.close();
     }
 }
