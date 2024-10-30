@@ -16,6 +16,7 @@ public class First{
     Node head = null;
     public void insertFirst(String data){
         Node newNode = new Node(data);
+        size++;
         if(head == null){
             head = newNode;
             return;
@@ -28,6 +29,7 @@ public class First{
     public void insertEnd(String data){
         Node currNode = head;
         Node newNode = new Node(data);
+        size++;
         if(head == null){
             head = newNode;
         }
@@ -42,6 +44,7 @@ public class First{
             System.out.println("List is empty");
             return;
         }
+        size--;
         if(head.next == null){
             head = null;
             return;
@@ -55,6 +58,7 @@ public class First{
             System.out.println("List is empty");
             return;
         }
+        size--;
         if(head.next == null){
             head = null;
             return;
@@ -64,6 +68,9 @@ public class First{
             secondLast = secondLast.next;
         }
         secondLast.next = null;
+    }
+    public int getSize(){
+        return size;
     }
     public void print(){
         Node currNode = head;
@@ -85,9 +92,11 @@ public class First{
         list.insertFirst("Hi");
         list.insertEnd("list");
         list.print();
-        System.out.println();
+        System.out.println(list.getSize());
         list.deleteBeg();
         list.deleteEnd();
         list.print();
+        System.out.println();
+        System.out.println(list.getSize());
 }
 }
