@@ -24,7 +24,7 @@ class Subset{
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         subset(n, set);
-        sc.close();;
+        sc.close();
     }
 }
 
