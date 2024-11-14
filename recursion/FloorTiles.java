@@ -1,5 +1,6 @@
 package recursion;
-
+//tile size 1*n
+//floor size m*n
 public class FloorTiles {
     public static int tiles(int m, int n){
         if(m==n){
