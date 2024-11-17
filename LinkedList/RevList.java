@@ -62,7 +62,8 @@ public class RevList{
         while(curr != null){
             next = curr.next;
             curr.next = prev;
-            //update the nodes 
+            
+            //update the nodes -> move the node one position right
             prev = curr;
             curr = next;
         }
