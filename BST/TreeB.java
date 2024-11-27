@@ -214,7 +214,6 @@ public class TreeB {
         System.out.println("LevelorderBottom traversal of the tree");
         List<List<Integer>> res = tree.levelOrderBottom(root);
         for(int i = 0; i<res.size(); i++){
-            for(int j =0; ; j==)
         }
         // System.out.println(tree.height(root));
         // System.out.println(tree.countNode(root));
