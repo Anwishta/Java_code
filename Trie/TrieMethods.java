@@ -24,16 +24,30 @@ public class TrieMethods {
         curr.eow = true;
 
     }
+    
     public static boolean search(String key){
         Node curr = root;
         for(int i=0; i<key.length(); i++){
             int idx = key.charAt(i) - 'a';
-            if (curr.children[idx] == null) {
+            if(curr.children[idx] == null){
                 return false;
             }
             curr = curr.children[idx];
         }
         return curr.eow == true;
+    }
+    public static boolean wordBreak(String key){
+        if(key.length()==0){
+            return true;
+        }
+        for(int i=0; i<key.length(); i++){
+            String first = key.substring(0, i);
+            String second = key.substring(i);
+            if(search(first) && wordBreak(second)){
+                return true;
+            }
+        }
+        return false;
 
     }
     public static void main(String[] args) {
