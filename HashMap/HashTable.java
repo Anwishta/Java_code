@@ -113,6 +113,10 @@ public class HashTable {
 
             }
         }
+        public boolean containsKey(int sum) {
+            // TODO Auto-generated method stub
+            throw new UnsupportedOperationException("Unimplemented method 'containsKey'");
+        }
     }
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>();
