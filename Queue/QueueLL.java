@@ -25,7 +25,7 @@ public class QueueLL {
                 tail.next = newNode;
                 tail = newNode;
             }
-
+            
             public static int deque(){
                 if(isEmpty()){
                     System.out.println("Empty queue");
